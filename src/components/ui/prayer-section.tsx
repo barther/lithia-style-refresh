@@ -10,15 +10,15 @@ const PrayerSection = () => {
           
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              In Need of Prayer?
+              Let's Pray Together
             </h2>
             <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-              We know that prayer works.
+              You don't have to carry it alone.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our prayer team is dedicated to lifting up your requests before God. 
-              Whether you're facing challenges, celebrating blessings, or seeking guidance, 
-              we're here to pray with you and for you.
+              Sometimes life feels overwhelming, and that's when we need each other most. 
+              Our prayer warriors are ready to stand with you—through every celebration, 
+              every struggle, and every season of uncertainty. Because together, we're stronger.
             </p>
           </div>
           

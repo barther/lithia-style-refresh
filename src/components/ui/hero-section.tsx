@@ -13,13 +13,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-gentle-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-          Connecting the community to Christ
+          Where faith comes alive
         </h1>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Through the empowerment of the Holy Spirit, the Global Methodist Church envisions 
-          multiplying disciples of Jesus Christ throughout the earth who flourish in scriptural 
-          holiness as we worship passionately, love extravagantly, and witness boldly.
+          Join us as we journey together in faith, hope, and love. At Lithia Springs Methodist, 
+          we believe that every person has a story worth telling and a purpose worth discovering. 
+          Come as you are—you belong here.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

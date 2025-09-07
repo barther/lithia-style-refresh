@@ -27,11 +27,11 @@ const PastorWelcome = () => {
             </h2>
             
             <blockquote className="text-lg text-foreground/80 leading-relaxed mb-8 italic">
-              "Welcome to Lithia Springs Methodist Church. We're thrilled to have you here, 
-              whether you're visiting for the first time or have been with us for years. 
-              My hope is that you find inspiration, encouragement, and a sense of belonging 
-              as you explore our site and join us in worship and service. God's love is at 
-              the heart of everything we do, and I look forward to sharing it with you."
+              "There's something beautiful about a community that chooses to walk together in faith. 
+              Here at Lithia Springs Methodist, we don't just attend church—we become family. 
+              Whether you're seeking answers, looking for peace, or simply curious about God's love, 
+              I invite you to discover what it means to truly belong. Your story matters, and 
+              we'd be honored to be part of your journey."
             </blockquote>
             
             <div className="flex items-center gap-4">

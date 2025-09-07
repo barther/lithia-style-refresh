@@ -5,38 +5,38 @@ import { Button } from './button';
 const MinistriesOverview = () => {
   const ministries = [
     {
-      name: "Chancel Choir",
-      description: "Share your musical gifts in traditional worship",
+      name: "Voices of Faith Choir",
+      description: "Where hearts harmonize and spirits soar through sacred song",
       time: "Wednesdays 7:45 PM - 8:45 PM",
       icon: "🎵"
     },
     {
-      name: "Handbell Choir", 
-      description: "Create beautiful music with our handbell ensemble",
+      name: "Celebration Bells", 
+      description: "Creating moments of pure joy through the beauty of handbells",
       time: "Wednesdays 6:45 PM - 7:45 PM",
       icon: "🔔"
     },
     {
-      name: "Boy Scouts Troop 62",
-      description: "Character development and outdoor adventures for boys",
+      name: "Adventure Scouts",
+      description: "Building character, courage, and lifelong friendships through faith-filled adventures",
       time: "Mondays 7:00 PM - 8:30 PM",
       icon: "⚜️"
     },
     {
-      name: "Methodist Women's Group",
-      description: "Fellowship and service opportunities for women",
+      name: "Sisters in Spirit",
+      description: "Where women connect, grow, and make a difference together",
       time: "Third Saturday 10:00 AM - 12:00 PM",
-      icon: "👥"
+      icon: "✨"
     },
     {
-      name: "Bible Study Groups",
-      description: "Deepen your faith through Scripture study",
-      time: "Multiple times throughout the week",
+      name: "Life Groups",
+      description: "Small circles, big impact—where Scripture meets real life",
+      time: "Various times throughout the week",
       icon: "📖"
     },
     {
-      name: "Brotherhood of Methodist Men",
-      description: "Men's fellowship, service, and spiritual growth",
+      name: "Band of Brothers",
+      description: "Brotherhood forged in faith, strengthened through service",
       time: "Second Tuesday 7:00 PM - 9:00 PM", 
       icon: "🤝"
     }
@@ -48,11 +48,11 @@ const MinistriesOverview = () => {
         
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Our Ministries
+            Find Your Place
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover ways to grow in faith, serve others, and build meaningful relationships 
-            within our church community
+            Every gift matters, every voice counts, and every person has a place to serve. 
+            Discover where your passions meet God's purpose in our vibrant church family
           </p>
         </div>
         

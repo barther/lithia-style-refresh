@@ -5,27 +5,27 @@ import { Button } from './button';
 const ServiceTimes = () => {
   const services = [
     {
-      name: "Adult Sunday School",
+      name: "Sunday School",
       time: "9:45 AM - 10:45 AM",
-      description: "Biblical study and fellowship for adults",
+      description: "Dive deeper into faith through thoughtful discussion and discovery",
       day: "Sunday"
     },
     {
-      name: "Children's Sunday School", 
+      name: "Kids' Kingdom", 
       time: "9:45 AM - 10:45 AM",
-      description: "Age-appropriate Bible lessons for children",
+      description: "Where young hearts learn that God's love is an adventure",
       day: "Sunday"
     },
     {
-      name: "Worship Service",
+      name: "Sunday Worship",
       time: "11:00 AM - 12:00 PM", 
-      description: "Traditional Methodist worship with contemporary elements",
+      description: "Heartfelt worship that blends timeless tradition with fresh inspiration",
       day: "Sunday"
     },
     {
-      name: "Prayer Group",
-      time: "5:00 PM - 7:00 PM",
-      description: "Community prayer and spiritual support",
+      name: "Midweek Prayer",
+      time: "6:00 PM - 7:00 PM",
+      description: "A sacred pause in your week to find peace and strength together",
       day: "Wednesday"
     }
   ];
@@ -35,10 +35,10 @@ const ServiceTimes = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Join Us for Worship
+            Gather with Us
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Experience God's love through meaningful worship, fellowship, and spiritual growth
+            Every gathering is a chance to connect—with God, with each other, and with your purpose
           </p>
         </div>
         
