@@ -1,15 +1,12 @@
 import React from 'react';
 import { Button } from './button';
 import churchHero from '@/assets/church-hero.jpg';
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${churchHero})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${churchHero})`
+    }}>
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
       
@@ -36,13 +33,9 @@ const HeroSection = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-gentle-float">
-          <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary-foreground/50 rounded-full mt-2"></div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
