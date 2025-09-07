@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Church Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-lg">✞</span>
+              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <img src="/lovable-uploads/9ac2d2fb-bacf-4051-9698-7d562f1e1a2f.png" alt="Lithia Springs Methodist Church" className="w-8 h-8 object-contain" />
               </div>
               <div>
                 <h3 className="font-bold text-xl">Lithia Springs</h3>

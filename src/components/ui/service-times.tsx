@@ -46,8 +46,8 @@ const ServiceTimes = () => {
           {services.map((service, index) => (
             <Card key={index} className="p-6 text-center hover:shadow-elegant transition-smooth group">
               <div className="mb-4">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-gentle">
-                  <span className="text-primary-foreground font-bold text-xl">✞</span>
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-gentle shadow-sm">
+                  <img src="/lovable-uploads/9ac2d2fb-bacf-4051-9698-7d562f1e1a2f.png" alt="Lithia Springs Methodist Church" className="w-12 h-12 object-contain" />
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-2">{service.name}</h3>
                 <p className="text-sm text-secondary font-semibold mb-2">{service.day}</p>
