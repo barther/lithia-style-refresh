@@ -23,8 +23,8 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="divine" size="xl">
-            Plan Your Visit
+          <Button variant="divine" size="xl" asChild>
+            <a href="/visit">Plan Your Visit</a>
           </Button>
           <Button variant="warm" size="xl">
             Watch Online

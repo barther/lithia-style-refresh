@@ -24,8 +24,8 @@ const Navigation = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
           </div>
 
-          <Button variant="hero" size="sm">
-            Plan Your Visit
+          <Button variant="hero" size="sm" asChild>
+            <a href="/visit">Plan Your Visit</a>
           </Button>
         </div>
       </div>
