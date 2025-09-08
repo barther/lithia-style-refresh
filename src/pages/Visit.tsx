@@ -68,7 +68,7 @@ const Visit = () => {
               <CardContent className="space-y-4">
                 <div>
                   <p className="font-medium">Lithia Springs Methodist Church</p>
-                  <p className="text-muted-foreground">123 Faith Avenue<br />Lithia Springs, GA 30122</p>
+                  <p className="text-muted-foreground">3711 Temple St<br />PO Box 627<br />Lithia Springs, GA 30122</p>
                 </div>
                 <div>
                   <p className="font-medium">Parking</p>
@@ -194,11 +194,11 @@ const Visit = () => {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4 text-primary" />
-                      <span>(770) 555-0123</span>
+                      <span>(770) 948-5429</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="h-4 w-4 text-primary" />
-                      <span>welcome@lithiaspringsmethodist.org</span>
+                      <span>office@lithiaspringsmethodist.org</span>
                     </div>
                   </div>
                 </div>

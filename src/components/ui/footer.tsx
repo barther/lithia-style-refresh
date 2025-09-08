@@ -47,16 +47,17 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <div className="space-y-2 text-primary-foreground/70">
-              <p>6825 Lee Road</p>
+              <p>3711 Temple St</p>
+              <p>PO Box 627</p>
               <p>Lithia Springs, GA 30122</p>
               <p className="mt-4">
-                <a href="tel:+1234567890" className="hover:text-secondary transition-smooth">
-                  (770) 944-1049
+                <a href="tel:+17709485429" className="hover:text-secondary transition-smooth">
+                  (770) 948-5429
                 </a>
               </p>
               <p>
-                <a href="mailto:info@lithiaspringsmethodist.org" className="hover:text-secondary transition-smooth">
-                  info@lithiaspringsmethodist.org
+                <a href="mailto:office@lithiaspringsmethodist.org" className="hover:text-secondary transition-smooth">
+                  office@lithiaspringsmethodist.org
                 </a>
               </p>
             </div>
