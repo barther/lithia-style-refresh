@@ -18,17 +18,18 @@ const Visit = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-elegant">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Plan Your Visit
-          </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            We're so glad you're considering a visit to our church! Here's everything you 
-            need to know to feel at home when you join us.
-          </p>
-        </div>
-      </section>
+{/* Hero Section (light, consistent with About page) */}
+<section className="pt-32 md:pt-36 pb-16 bg-background">
+  <div className="container mx-auto px-4 text-center max-w-4xl">
+    <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 animate-fade-in">
+      Plan Your Visit
+    </h1>
+    <p className="text-xl text-foreground/90 leading-relaxed animate-fade-in">
+      We're so glad you're considering a visit to our church! Here's everything you 
+      need to know to feel at home when you join us.
+    </p>
+  </div>
+</section>
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12">
