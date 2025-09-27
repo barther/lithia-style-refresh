@@ -7,9 +7,13 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-smooth">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm">
-              <img src="/lovable-uploads/9ac2d2fb-bacf-4051-9698-7d562f1e1a2f.png" alt="Lithia Springs Methodist Church" className="w-8 h-8 object-contain" />
-            </div>
+            {/* Logo: round the image itself; no white box */}
+            <img
+              src="/lovable-uploads/9ac2d2fb-bacf-4051-9698-7d562f1e1a2f.png"
+              alt="Lithia Springs Methodist Church"
+              className="h-10 w-10 rounded-lg object-cover block"
+              draggable={false}
+            />
             <div>
               <h1 className="font-bold text-xl text-foreground">Lithia Springs</h1>
               <p className="text-sm text-muted-foreground">Methodist Church</p>
