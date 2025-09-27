@@ -68,10 +68,18 @@ const Footer = () => {
           
         </div>
         
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
-          <p className="text-primary-foreground/60">
-            © 2024 Lithia Springs Methodist Church. All rights reserved.
-          </p>
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-primary-foreground/60">
+              © 2024 Lithia Springs Methodist Church. All rights reserved.
+            </p>
+            <a 
+              href="/privacy" 
+              className="text-primary-foreground/70 hover:text-secondary transition-smooth text-sm"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
