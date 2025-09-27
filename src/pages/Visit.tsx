@@ -18,8 +18,7 @@ const Visit = () => {
       <Navigation />
       
       {/* Hero Section */}
-{/* Hero Section (light, consistent with About page) */}
-<section className="pt-32 md:pt-36 pb-16 bg-background">
+<section className="pt-32 md:pt-36 pb-16 bg-gradient-to-b from-[hsl(var(--secondary)/0.06)] to-background">
   <div className="container mx-auto px-4 text-center max-w-4xl">
     <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 animate-fade-in">
       Plan Your Visit
