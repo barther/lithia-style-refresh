@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './button';
+import { Sheet, SheetContent, SheetTrigger } from './sheet';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
@@ -20,6 +24,7 @@ const Navigation = () => {
             </div>
           </a>
           
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="/about" className="text-foreground hover:text-primary transition-smooth">About Us</a>
             <a href="#services" className="text-foreground hover:text-primary transition-smooth">Services</a>
@@ -28,9 +33,66 @@ const Navigation = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
           </div>
 
-          <Button variant="hero" size="sm" asChild>
-            <a href="/visit">Plan Your Visit</a>
-          </Button>
+          {/* Desktop CTA Button */}
+          <div className="hidden md:block">
+            <Button variant="hero" size="sm" asChild>
+              <a href="/visit">Plan Your Visit</a>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-80">
+              <div className="flex flex-col space-y-6 mt-8">
+                <a 
+                  href="/about" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  About Us
+                </a>
+                <a 
+                  href="#services" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Services
+                </a>
+                <a 
+                  href="/ministries" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Ministries
+                </a>
+                <a 
+                  href="#events" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Events
+                </a>
+                <a 
+                  href="#contact" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact
+                </a>
+                <div className="pt-4 border-t border-border">
+                  <Button variant="hero" size="lg" asChild className="w-full">
+                    <a href="/visit" onClick={() => setIsOpen(false)}>Plan Your Visit</a>
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
