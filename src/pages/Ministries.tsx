@@ -69,19 +69,14 @@ const Ministries = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="pt-32 md:pt-36 pb-16 bg-gradient-to-b from-[hsl(var(--secondary)/0.06)] to-transparent">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Ministries
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">Our Ministries</h1>
+            <p className="text-xl text-foreground/90 leading-relaxed animate-fade-in">
               Discover your place in our church family. From prayer and worship to service and fellowship, 
               we offer meaningful ways to grow in faith and connect with others.
             </p>
-            <Badge variant="secondary" className="text-sm px-4 py-2">
-              Find Your Calling
-            </Badge>
           </div>
         </div>
       </section>
