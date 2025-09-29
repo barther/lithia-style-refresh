@@ -27,7 +27,7 @@ const PastorWelcome = () => {
             </h2>
             
 <blockquote className="text-lg text-foreground/80 leading-relaxed mb-8 italic">
-  "You have a place here — not because of who you are, but because of what Christ has done. At the cross the ground is level. We are all sinners, all in need of mercy, and all invited into God’s family through Jesus. This church isn’t built on programs or polish. It’s built on the good news that Christ died and rose again so we could live. Our hope, our unity, our future — it all rests on Him. If you’re ready for a place where the gospel is at the center and love is lived out in action, welcome home."
+  "You have a place here. Not because of who you are, but because of what Christ has done. At the cross the ground is level. We are all sinners, all in need of mercy, and all invited into God’s family through Jesus. This church isn’t built on programs or polish. It’s built on the good news that Christ died and rose again so we could live. Our hope, our unity, and our future all rests on Him. If you’re ready for a place where the gospel is at the center and love is lived out in action, welcome home."
 </blockquote>
             
             <div className="flex items-center gap-4">
