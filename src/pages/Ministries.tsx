@@ -84,7 +84,7 @@ const Ministries = () => {
       {/* Ministries Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {ministries.map((ministry, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300">
                 <CardHeader className="pb-4">
