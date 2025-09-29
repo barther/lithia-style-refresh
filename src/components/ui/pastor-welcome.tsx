@@ -26,13 +26,9 @@ const PastorWelcome = () => {
               A word from the pastor
             </h2>
             
-            <blockquote className="text-lg text-foreground/80 leading-relaxed mb-8 italic">
-              "There's something beautiful about a community that chooses to walk together in faith. 
-              Here at Lithia Springs Methodist, we don't just attend church—we become family. 
-              Whether you're seeking answers, looking for peace, or simply curious about God's love, 
-              I invite you to discover what it means to truly belong. Your story matters, and 
-              we'd be honored to be part of your journey."
-            </blockquote>
+<blockquote className="text-lg text-foreground/80 leading-relaxed mb-8 italic">
+  "You have a place here — not because of who you are, but because of what Christ has done. At the cross the ground is level. We are all sinners, all in need of mercy, and all invited into God’s family through Jesus. This church isn’t built on programs or polish. It’s built on the good news that Christ died and rose again so we could live. Our hope, our unity, our future — it all rests on Him. If you’re ready for a place where the gospel is at the center and love is lived out in action, welcome home."
+</blockquote>
             
             <div className="flex items-center gap-4">
               <div className="h-px bg-primary flex-grow"></div>
