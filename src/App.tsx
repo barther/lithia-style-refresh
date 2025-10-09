@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Ministries from "./pages/Ministries";
 import Prayer from "./pages/Prayer";
 import Events from "./pages/Events";
+import ChurchLife from "./pages/ChurchLife";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/ministries" element={<Ministries />} />
           <Route path="/prayer" element={<Prayer />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/church-life" element={<ChurchLife />} />
           <Route path="/privacy" element={<Privacy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
