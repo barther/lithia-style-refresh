@@ -12,6 +12,7 @@ import Events from "./pages/Events";
 import ChurchLife from "./pages/ChurchLife";
 import Privacy from "./pages/Privacy";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/events" element={<Events />} />
           <Route path="/church-life" element={<ChurchLife />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/finding-hope" element={<BlogPost />} />
           <Route path="/privacy" element={<Privacy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

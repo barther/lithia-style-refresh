@@ -127,9 +127,11 @@ const Blog = () => {
                 </div>
 
                 <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {post.title}
-                  </CardTitle>
+                  <a href={post.id === 1 ? "/blog/finding-hope" : "/blog"}>
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                      {post.title}
+                    </CardTitle>
+                  </a>
                   
                   {/* Meta Information */}
                   <div className="flex flex-wrap gap-4 text-sm text-muted-foreground pt-2">
@@ -153,9 +155,11 @@ const Blog = () => {
                     <span className="text-sm text-muted-foreground">
                       {post.readTime}
                     </span>
-                    <Button variant="ghost" size="sm" className="group-hover:text-primary">
-                      Read More
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <Button variant="ghost" size="sm" className="group-hover:text-primary" asChild>
+                      <a href={post.id === 1 ? "/blog/finding-hope" : "/blog"}>
+                        Read More
+                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
