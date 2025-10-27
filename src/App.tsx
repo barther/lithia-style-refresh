@@ -11,6 +11,7 @@ import Prayer from "./pages/Prayer";
 import Events from "./pages/Events";
 import ChurchLife from "./pages/ChurchLife";
 import Privacy from "./pages/Privacy";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/prayer" element={<Prayer />} />
           <Route path="/events" element={<Events />} />
           <Route path="/church-life" element={<ChurchLife />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/privacy" element={<Privacy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

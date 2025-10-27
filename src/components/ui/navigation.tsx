@@ -30,6 +30,7 @@ const Navigation = () => {
             <a href="#services" className="text-foreground hover:text-primary transition-smooth">Services</a>
             <a href="/ministries" className="text-foreground hover:text-primary transition-smooth">Ministries</a>
             <a href="/church-life" className="text-foreground hover:text-primary transition-smooth">Church Life</a>
+            <a href="/blog" className="text-foreground hover:text-primary transition-smooth">Blog</a>
             <a href="/prayer" className="text-foreground hover:text-primary transition-smooth">Prayer</a>
             <a href="/events" className="text-foreground hover:text-primary transition-smooth">Events</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-smooth">Contact</a>
@@ -79,6 +80,13 @@ const Navigation = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   Church Life
+                </a>
+                <a 
+                  href="/blog" 
+                  className="text-lg font-medium text-foreground hover:text-primary transition-smooth py-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Blog
                 </a>
                 <a 
                   href="/prayer" 
