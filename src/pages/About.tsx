@@ -80,36 +80,21 @@ const About = () => {
               </h2>
             </div>
             
-            {/* Historical Photos Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-4">
-                <AspectRatio ratio={4/3}>
-                  <img 
-                    src="/placeholder.svg" 
-                    alt="Historical photo of original Lithia Springs Methodist Church building circa 1845"
-                    className="rounded-lg object-cover w-full h-full shadow-elegant"
-                  />
-                </AspectRatio>
-                <p className="text-sm text-muted-foreground text-center italic">
-                  Original church building, established 1845
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <AspectRatio ratio={4/3}>
-                  <img 
-                    src="/placeholder.svg" 
-                    alt="The 18-foot cross crafted from timber salvaged from the second sanctuary"
-                    className="rounded-lg object-cover w-full h-full shadow-elegant"
-                  />
-                </AspectRatio>
-                <p className="text-sm text-muted-foreground text-center italic">
-                  18-foot cross crafted from salvaged sanctuary timber
-                </p>
-              </div>
+            {/* Large Historical Photo */}
+            <div className="mb-12">
+              <AspectRatio ratio={16/9}>
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Historical photo of original Lithia Springs Methodist Church building circa 1845"
+                  className="rounded-lg object-cover w-full h-full shadow-elegant"
+                />
+              </AspectRatio>
+              <p className="text-sm text-muted-foreground text-center italic mt-3">
+                Original church building, established 1845
+              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
               <div>
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">The Beginning</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -153,12 +138,27 @@ const About = () => {
               </div>
             </div>
             
-            <div className="mt-12 text-center">
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                The majestic 18-foot cross that serves as the focal point of our altar was crafted from timber 
-                salvaged from the second sanctuary, symbolizing the continuity of faith and tradition that 
-                has defined our church's history for over 150 years.
-              </p>
+            {/* Cross Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <AspectRatio ratio={3/4}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="The 18-foot cross crafted from timber salvaged from the second sanctuary"
+                    className="rounded-lg object-cover w-full h-full shadow-elegant"
+                  />
+                </AspectRatio>
+                <p className="text-sm text-muted-foreground text-center italic mt-3">
+                  18-foot cross crafted from salvaged sanctuary timber
+                </p>
+              </div>
+              <div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  The majestic 18-foot cross that serves as the focal point of our altar was crafted from timber 
+                  salvaged from the second sanctuary, symbolizing the continuity of faith and tradition that 
+                  has defined our church's history for over 150 years.
+                </p>
+              </div>
             </div>
           </div>
         </div>
