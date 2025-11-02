@@ -4,6 +4,7 @@ import Footer from '@/components/ui/footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const About = () => {
   return (
@@ -79,7 +80,36 @@ const About = () => {
               </h2>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Historical Photos Grid */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="space-y-4">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Historical photo of original Lithia Springs Methodist Church building circa 1845"
+                    className="rounded-lg object-cover w-full h-full shadow-elegant"
+                  />
+                </AspectRatio>
+                <p className="text-sm text-muted-foreground text-center italic">
+                  Original church building, established 1845
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="The 18-foot cross crafted from timber salvaged from the second sanctuary"
+                    className="rounded-lg object-cover w-full h-full shadow-elegant"
+                  />
+                </AspectRatio>
+                <p className="text-sm text-muted-foreground text-center italic">
+                  18-foot cross crafted from salvaged sanctuary timber
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">The Beginning</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -192,30 +222,61 @@ const About = () => {
       {/* Community Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="outline" className="mb-4">Our Community</Badge>
-            <h2 className="text-4xl font-bold text-foreground mb-8">
-              A Cornerstone of Lithia Springs
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              For over 150 years, we've been committed to serving our neighbors and fostering a welcoming 
-              and inclusive environment where everyone can grow in faith and love. Our church offers a 
-              variety of programs and ministries for all ages.
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge variant="outline" className="mb-4">Our Community</Badge>
+              <h2 className="text-4xl font-bold text-foreground mb-8">
+                A Cornerstone of Lithia Springs
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                For over 150 years, we've been committed to serving our neighbors and fostering a welcoming 
+                and inclusive environment where everyone can grow in faith and love. Our church offers a 
+                variety of programs and ministries for all ages.
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-card p-6 rounded-lg shadow-elegant">
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Worship & Fellowship</h3>
-                <p className="text-muted-foreground">Sunday worship services and fellowship groups for spiritual growth</p>
-              </div>
-              <div className="bg-card p-6 rounded-lg shadow-elegant">
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Education & Growth</h3>
-                <p className="text-muted-foreground">Sunday School and prayer groups for all ages and stages of faith</p>
-              </div>
-              <div className="bg-card p-6 rounded-lg shadow-elegant">
-                <h3 className="text-lg font-semibold mb-2 text-foreground">Community Service</h3>
-                <p className="text-muted-foreground">Outreach programs and missions that make a positive local impact</p>
-              </div>
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <Card className="bg-card shadow-elegant overflow-hidden">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Sunday worship service at Lithia Springs Methodist Church"
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2 text-foreground">Worship & Fellowship</h3>
+                  <p className="text-muted-foreground">Sunday worship services and fellowship groups for spiritual growth</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card shadow-elegant overflow-hidden">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Sunday School Bible study group in session"
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2 text-foreground">Education & Growth</h3>
+                  <p className="text-muted-foreground">Sunday School and prayer groups for all ages and stages of faith</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-card shadow-elegant overflow-hidden">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Church members volunteering in community outreach program"
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-2 text-foreground">Community Service</h3>
+                  <p className="text-muted-foreground">Outreach programs and missions that make a positive local impact</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
